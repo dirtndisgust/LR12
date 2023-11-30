@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>LR12</title>
+</head>
+<body>
+  <div id="container">
+    <div class="selecter">
+      <label for="difficultySelect">Оберіть рівень складності:</label>
+      <select id="difficultySelect">
+        <option value="easy">початковий</option>
+        <option value="medium">середній</option>
+        <option value="hard">просунутий</option>
+      </select>
+    </div>
+
+    <div id="word" class="word"></div>
+    <span id="prevStep">&lt;</span>
+    <span id="steps">Крок <span id="step">1</span>/10</span>
+    <span id="nextStep">&gt;</span>
+    <div id="status">
+      <input type="text" id="translationInput" placeholder="Введіть переклад">
+      <div id="answers">Правильно: <span id="correct">0</span></div>
+      <div id="answers">Неправильно: <span id="incorrect">0</span></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
